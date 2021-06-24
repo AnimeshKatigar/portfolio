@@ -39,7 +39,7 @@ function Home() {
 
   return (
     <div className="MainHomeScreen">
-      <Particle />
+      {/* <Particle /> */}
       <section>
         <img src={starsImg} id="stars" alt="stars" />
         <img src={moonImg} id="moon" alt="moon" />
@@ -51,7 +51,17 @@ function Home() {
         <h2 id="text">
           <span id="hey">Hey</span> <span id="there">There!</span>
         </h2>
-        <a href="#sec" id="btn">
+        <a
+          id="btn"
+          onClick={() => {
+            var elementS = document.getElementById("sec");
+            elementS?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              inline: "nearest",
+            });
+          }}
+        >
           Explore
         </a>
         <img

@@ -129,6 +129,7 @@ section img#mountains_front {
   font-size: 1.5em;
   transform: translateY(100px);
   z-index: 9;
+  cursor: pointer;
   border-radius: 40px;
 }
 
