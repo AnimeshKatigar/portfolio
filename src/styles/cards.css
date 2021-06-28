@@ -30,6 +30,13 @@
   /* background: #161623; */
 }
 
+@media screen and (max-width:950px){
+  .CardMainContainer{
+    background-image: var(--image-gradient);
+  }
+  
+}
+
 .Card-container .card {
   position: relative;
   width: 280px;

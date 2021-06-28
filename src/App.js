@@ -4,7 +4,7 @@ import history from "./routes/createHistory";
 import Home from "./pages/Home";
 import Cards from "./pages/Cards";
 import Navbar from "./pages/Navbar";
-import Routes from "./routes";
+import Footer from "./pages/Footer";
 import Particles from "./styles/Particle";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/project" component={Cards} />
         </Switch>
+        <Footer />
       </Router>
       {/* <Routes/> */}
       {/* <Home/> */}

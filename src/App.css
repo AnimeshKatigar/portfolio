@@ -28,6 +28,69 @@
     color: #61dafb;
   }
   
+  .footer {
+    /* background:linear-gradient(#2b1055, #7597de); */
+    background-image: linear-gradient(
+      to bottom left,
+      #1c0522,
+      /* rgba(17, 16, 16, 0.678), */ rgba(12, 10, 22, 0.863)
+    );
+  background-position: top center;
+  background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    bottom: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 8px !important ;
+  }
+  .footer-copywright {
+    text-align: center !important;
+  }
+ 
+  
+
+  .footer-body {
+    text-align: center !important;
+  }
+
+  .footer-body ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-body ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 767px) {
+    .footer-copywright {
+      text-align: center !important;
+    }
+  
+    .footer-body {
+      text-align: center !important;
+    }
+  }
+  
+  .footer h3 {
+    font-size: 1em;
+    color: white !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+  .footer-icons {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
+  }
+  
+  .blockquote-footer {
+    color: #a588c0 !important;
+  }
+
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);

@@ -22,7 +22,7 @@ const Cards = () => {
       no: "03",
       title: "Weather Website",
       desc: "This is a weather website which shows the current weather of the city we mentioned.",
-      link: "https://cryptocurrency-tracker-1310.netlify.app/",
+      link: "https://infinite-earth-32951.herokuapp.com/",
     },
     {
       no: "04",
