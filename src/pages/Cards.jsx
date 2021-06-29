@@ -1,8 +1,13 @@
 import React from "react";
 import "../styles/cards.css";
 import Tilt from "react-parallax-tilt";
-import Particle from "../styles/Particle"
-import { animated,useSpring } from "react-spring";
+import Particle from "../styles/Particle";
+import ProjectCards from "./ProjectCards";
+import sacrd from "../assets/sacrdDB.png";
+import nuwebapp from "../assets/NuwebApp.png";
+import pms from "../assets/PMS.png";
+import finesse from "../assets/finesse.png";
+import vavo from "../assets/vavo.png";
 
 const Cards = () => {
   const projects = [
@@ -38,10 +43,40 @@ const Cards = () => {
     },
   ];
 
- 
+  const intprojects = [
+    {
+      title: "FINESSE",
+      desc: "Good App, project manager",
+      img: finesse,
+    },
+    {
+      title: "NUWEBAPP",
+      desc: "Good App, data science",
+      img: nuwebapp,
+    },
+    {
+      title: "SACRD",
+      desc: "SACRD is the most robust and delightful to use Robotic Process Automation Solution for Multi-Currency, Multi-GAAP Financial Reporting Automation, Consolidation and Business Intelligence.",
+      img: sacrd,
+    },
+    {
+      title: "VAVO Digital",
+      desc: "Good App, project manager",
+      img: vavo,
+    },
+    {
+      title: "PMS",
+      desc: "Good App, project manager",
+      img: pms,
+    },
+  ];
+
   return (
-    <div className="CardMainContainer" >
-        <Particle/>
+    <div className="CardMainContainer">
+      <Particle />
+      <h2 className="personalProjects">
+        Personal <span style={{ color: "#CD5FF8" }}>Projects</span>
+      </h2>
       <div className="Card-container">
         {projects.map((card) => (
           <Tilt>
@@ -58,6 +93,22 @@ const Cards = () => {
               </div>
             </div>
           </Tilt>
+        ))}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {intprojects.map((project) => (
+          <ProjectCards
+            imgPath={project.img}
+            title={project.title}
+            description={project.desc}
+          />
         ))}
       </div>
     </div>

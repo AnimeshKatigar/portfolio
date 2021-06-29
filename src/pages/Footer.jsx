@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -19,7 +18,49 @@ function Footer() {
           <h3>Copyright © {year}</h3>
         </div>
         <div md="4" className="footer-body">
-          <ul className="footer-icons">
+        <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/AnimeshKatigar"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              {/* <li className="social-icons">
+                <a
+                  href="https://twitter.com/Soumyajit4419"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li> */}
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/animesh-katigar-2471141a4/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/anony.mesh/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+            </ul>
+          {/* <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://github.com/soumyajit4419"
@@ -52,7 +93,7 @@ function Footer() {
                 <AiFillInstagram />
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
     </div>
   );
