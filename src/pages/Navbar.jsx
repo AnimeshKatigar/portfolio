@@ -13,7 +13,7 @@ function Navbar() {
     <div className="navbarMainContainer">
       <nav>
         <a href="/" className="logo">
-          Animesh
+          Ani<span style={{ color: "#CD5FF8" }}>ME</span>sh
         </a>
         <div className="Hamburger" onclick={()=>setToggle(!toggle)}>
           <div className="Line"></div>
