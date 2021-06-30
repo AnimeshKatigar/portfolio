@@ -200,6 +200,7 @@
 
 .project-card-view {
   width: 280px;
+  min-height: 400px;
   /* height: 400px; */
   border-radius:10px ;
   margin: 30px;

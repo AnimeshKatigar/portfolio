@@ -61,7 +61,7 @@ const Cards = () => {
     },
     {
       title: "VAVO Digital",
-      desc: "Good App, project manager",
+      desc: "This project was aimed at ​Influencer Marketing​. As part of the project, I designed web pages as per the designs provided, integrated APIs, debugging and handling of errors, etc.",
       img: vavo,
     },
     {
@@ -75,7 +75,7 @@ const Cards = () => {
     <div className="CardMainContainer">
       <Particle />
       <h2 className="personalProjects">
-        Personal <span style={{ color: "#CD5FF8" }}>Projects</span>
+         <span style={{ color: "#CD5FF8" }}>Personal</span> Projects
       </h2>
       <div className="Card-container">
         {projects.map((card) => (
@@ -95,6 +95,9 @@ const Cards = () => {
           </Tilt>
         ))}
       </div>
+      <h2 className="personalProjects">
+         <span style={{ color: "#CD5FF8" }}>Corporate</span> Projects
+      </h2>
       <div
         style={{
           display: "flex",
