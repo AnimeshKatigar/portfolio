@@ -54,12 +54,12 @@ function Navbar() {
           </li>
           <li onClick={() => setSelected(3)}>
             <a
-              href="/"
+              href="/resume"
               className={
-                selected == 3 && window.location.pathname == "/" && "active"
+                selected == 3 || window.location.pathname == "/resume" && "active"
               }
             >
-              Contact
+              Resume
             </a>
           </li>
         </ul>

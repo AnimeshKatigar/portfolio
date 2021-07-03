@@ -49,7 +49,7 @@ function Home() {
           alt="mountains_behind"
         />
         <h2 id="text">
-          <span id="hey">Hey</span> <span id="there">There!</span>
+          <span id="hey">Hello</span> <span id="there">World </span>
         </h2>
         <a
           id="btn"
