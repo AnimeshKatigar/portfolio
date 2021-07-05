@@ -5,7 +5,8 @@ import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
 import mountains_behindImg from "../assets/mountains_behind.png";
 import mountains_frontImg from "../assets/mountains_front.png";
-import Particle from "../styles/Particle";
+import profile from "../assets/perfil.png";
+import blob from "../assets/blob.svg";
 
 import "../styles/home.css";
 
@@ -72,27 +73,39 @@ function Home() {
       </section>
       <div className="sec" id="sec">
         <h2>Hi I am Animesh and here's something about me!</h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Leo integer
-        malesuada nunc vel risus commodo. Vitae turpis massa sed elementum
-        tempus egestas sed. Turpis in eu mi bibendum. Quam nulla porttitor massa
-        id neque aliquam vestibulum morbi blandit. Sit amet tellus cras
-        adipiscing enim eu. Convallis tellus id interdum velit. Leo a diam
-        sollicitudin tempor id eu nisl nunc mi. Lacinia quis vel eros donec.
-        Varius duis at consectetur lorem donec massa. Tortor pretium viverra
-        suspendisse potenti nullam ac tortor vitae purus. Id interdum velit
-        laoreet id donec ultrices tincidunt. Pulvinar sapien et ligula
-        ullamcorper malesuada proin libero. Consequat ac felis donec erbi
-        tristique. Morbi tincidunt ornare massa eget egestas purus viverra
-        accumsan. Eu facilisis sed odio morbi quis commodo. Pellentesque
-        adipiscing commodo elit at imperdiet dui accumsan sit amet. Vitae purus
-        faucibus ornare suspendisse sed nisi. Dui accumsan sit amet nulla
-        facilisi morbi tempus. Amet tellus cras adipiscing enim eu turpis
-        egestas. Laoreet sit amet cursus sit. Leo a diam sollicitudin tempor id
-        eu nisl nunc mi. Sed vulputate odio ut enim. Egestas egestas fringilla
-        phasellus faucibus scelerisque eleifend. Urna condimentum mattis
-        pellentesque id nibh tortor id aliquet lectus. Suspendisse in est ante
-        in nibh mauris cursus mattis molestie.
+        <div>
+          <div></div>
+          <div className="" style={{ width: "40%",padding:10 }}>
+            <div className="home-blob">
+              <img src={profile} className="home-blob-img" alt="profile-img" />
+            </div>
+          </div>
+        </div>
+
+        {/* <svg
+          className="home-blob"
+          viewBox="0 0 200 187"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        >
+          <mask id="mask0" mask-type="alpha">
+            <path
+              d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+            />
+          </mask>
+          <g mask="url(#mask0)">
+            <path
+              d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+            />
+            <image className="home-blob-img" xlinkHref="../assets/perfil2.png" />
+          </g>
+        </svg> */}
       </div>
     </div>
   );

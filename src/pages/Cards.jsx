@@ -6,6 +6,7 @@ import ProjectCards from "./ProjectCards";
 import sacrd from "../assets/sacrdDB.png";
 import nuwebapp from "../assets/NuwebApp.png";
 import pms from "../assets/PMS.png";
+import space from "../assets/image.png";
 import finesse from "../assets/finesse.png";
 import vavo from "../assets/vavo.png";
 import { AiFillGithub } from "react-icons/ai";
@@ -111,6 +112,21 @@ const Cards = () => {
           </div>
           // </Tilt>
         ))}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <ProjectCards
+            imgPath={space}
+            title="Space Invaders"
+            codeLink="https://github.com/AnimeshKatigar/SpaceInvaders"
+            description="An arcade shooter game created using PYGAME library which brings you back to the golden era."
+          />
+        </div>
       </div>
       <h2 className="personalProjects">
         <span style={{ color: "#CD5FF8" }}>Corporate</span> Projects
@@ -142,8 +158,8 @@ const Cards = () => {
             <p>
               The world web is very big, but what we see is just a gist of how
               actually the web is. It contains of surface and deep web and all
-              the dark stuff, highly confidential stuff, malpractices are carried
-              out in the deep web.....
+              the dark stuff, highly confidential stuff, malpractices are
+              carried out in the deep web.....
             </p>
             <div className="btn">
               <a
