@@ -124,7 +124,7 @@ const Cards = () => {
             imgPath={space}
             title="Space Invaders"
             codeLink="https://github.com/AnimeshKatigar/SpaceInvaders"
-            description="An arcade shooter game created using PYGAME library which brings you back to the golden era."
+            description="An arcade shooter game created using PYGAME library which reminds you and brings you back to the golden era."
           />
         </div>
       </div>
