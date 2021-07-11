@@ -13,7 +13,8 @@ function Navbar() {
     <div className="navbarMainContainer">
       <nav>
         <a href="/" className="logo">
-          Ani<span style={{ color: "#CD5FF8" }}>ME</span>sh
+          {/* Ani<span style={{ color: "#CD5FF8" }}>ME</span>sh */}
+          Animesh
         </a>
         {/* <div className="Hamburger" style={{cursor: "pointer"}} onclick={handleClick}>
           <div className="Line"></div>

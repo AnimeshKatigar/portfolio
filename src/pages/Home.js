@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-lone-blocks */
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
@@ -5,9 +7,11 @@ import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
 import mountains_behindImg from "../assets/mountains_behind.png";
 import mountains_frontImg from "../assets/mountains_front.png";
-import profile from "../assets/perfil.png";
+import me from "../assets/alibaug.jpg";
+import haha from "../assets/hahaha.png";
 import blob from "../assets/blob.svg";
-import animeshImg from "../assets/animesh_blur.png";
+import animeshImg from "../assets/animeshK.png";
+import { FaPortrait } from "react-icons";
 
 import "../styles/home.css";
 
@@ -38,6 +42,30 @@ function Home() {
       true
     );
   });
+
+  const details = [
+    { title: "Name", desc: "Animesh Shrikant Katigar" },
+    {
+      title: "Date of birth",
+      desc: "13/10/2000",
+    },
+    {
+      title: "Location",
+      desc: "Dadar, Mumbai",
+    },
+    {
+      title: "Phone No.",
+      desc: "+91 9221288192",
+    },
+    {
+      title: "E-mail ID",
+      desc: "katigaranimesh@gmail.com",
+    },
+    {
+      title: "Nationality",
+      desc: "Indian",
+    },
+  ];
 
   return (
     <div className="MainHomeScreen">
@@ -73,70 +101,130 @@ function Home() {
         />
       </section>
       <div className="sec" id="sec">
-        <div style={{ display: "flex",marginBottom:"15px" }}>
+        <div
+          style={{
+            display: "flex",
+            marginBottom: "15px",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
           <div
             style={{
+              width: "40%",
               display: "flex",
               flexDirection: "column",
               textAlign: "left",
             }}
           >
-            <h2>
-              Hi there! <span className="wave">👋🏻</span>
-              <br /> I am{" "}
-              <span style={{ color: "#CD5FF8" }}>Animesh Katigar</span>
-            </h2>
-
-            <Typewriter
-              options={{
-                strings: [
-                  "IT Student",
-                  "ReactJS Developer",
-                  "Freelance developer",
-                ],
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 50,
-              }}
-            />
-          </div>
-          {/* <div>
-            <img src={animeshImg} />
-          </div> */}
-          {/* <div className="" style={{ width: "40%",padding:10 }}>
-            <div className="home-blob">
-              <img src={profile} className="home-blob-img" alt="profile-img" />
+            <div>
+              <img
+                alt="ProfileImage"
+                src={animeshImg}
+                width="305"
+                height="320"
+                className="profileImg"
+              />
             </div>
-          </div> */}
-        </div>
 
-        <div style={{ textAlign: "left", marginTop: "50px", width: "75%"}}>
-          <h1 style={{ fontSize: "2.2em", fontWeight: "600" }}>
-            LET ME <span className="purple"> INTRODUCE </span> MYSELF
-          </h1>
-          <br />
-          <p className="home-about-body">
-            A self-taught, hardworking, and organized individual who loves to
-            make things that live on the internet. My strength lies in
-            designing, developing, and testing websites. I am fluent in classics
-            like
-            <span style={{ color: "#CD5FF8" }}> Javascript</span> and{" "}
-            <span style={{ color: "#CD5FF8" }}>Python</span>.
-            <br />
-            <br />
-            Whenever possible, I apply my passion for developing products with
-            <span style={{ color: "#CD5FF8" }}>
-              {" "}
-              Modern Javascript Frameworks
-            </span>
-            &nbsp; like
-            <span style={{ color: "#CD5FF8" }}> ReactJS</span> and{" "}
-            <span style={{ color: "#CD5FF8" }}>NodeJS</span>. When not coding
-            you will see me playing football, gaming or binge watching sitcoms.
-          </p>
-        </div>
+            <h2>Personal Details</h2>
+            <div
+              style={{ display: "flex", flexWrap: "wrap", margin: "20px 0px" }}
+            >
+              {details.map((detail) => (
+                <>
+                  <div
+                    style={{
+                      width: "30%",
+                      fontWeight: "500",
+                      textAlign: "left",
+                      marginBottom: "5px",
+                    }}
+                  >
+                    {detail.title}
+                  </div>
+                  <div
+                    style={{
+                      width: "70%",
+                      textAlign: "left",
+                      fontWeight: "300",
+                    }}
+                  >
+                    : {detail.desc}
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+          <div
+            style={{
+              width: "60%",
+              display: "flex",
+              flexDirection: "column",
+              textAlign: "left",
+            }}
+          >
+            <div style={{ minHeight: 306, display: "flex",alignItems: "center"}}>
+              <div >
+                <h2>
+                  Hi there! <span className="wave">👋🏻</span>
+                  <br /> I am{" "}
+                  <span style={{ color: "#CD5FF8" }}>Animesh Katigar</span>
+                </h2>
 
-        {/* <svg
+                <Typewriter
+                  options={{
+                    strings: [
+                      "IT Student",
+                      "ReactJS Developer",
+                      "Freelance developer",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+                  }}
+                />
+              </div>
+            </div>{" "}
+            <div
+              style={{ textAlign: "left", marginTop: "50px", width: "100%" }}
+            >
+              <h1 style={{ fontSize: "2.2em", fontWeight: "600" }}>
+                LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              </h1>
+              <br />
+              <p className="home-about-body">
+                A self-taught, hardworking, and organized individual who loves
+                to make things that live on the internet. My strength lies in
+                designing, developing, and testing websites. I am fluent in
+                classics like
+                <span style={{ color: "#CD5FF8" }}> Javascript</span> and{" "}
+                <span style={{ color: "#CD5FF8" }}>Python</span>.
+                <br />
+                <br />
+                Whenever possible, I apply my passion for developing products
+                with
+                <span style={{ color: "#CD5FF8" }}>
+                  {" "}
+                  Modern Javascript Frameworks
+                </span>
+                &nbsp; like
+                <span style={{ color: "#CD5FF8" }}> ReactJS</span> and{" "}
+                <span style={{ color: "#CD5FF8" }}>NodeJS</span>. When not
+                coding you will see me playing football, gaming or binge
+                watching sitcoms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+export default Home;
+
+{
+  /* <svg
           className="home-blob"
           viewBox="0 0 200 187"
           xmlns="http://www.w3.org/2000/svg"
@@ -159,9 +247,17 @@ function Home() {
             />
             <image className="home-blob-img" xlinkHref="../assets/perfil2.png" />
           </g>
-        </svg> */}
-      </div>
-    </div>
-  );
+        </svg> */
 }
-export default Home;
+{
+  /* <div>
+            <img src={animeshImg} />
+          </div> */
+}
+{
+  /* <div className="" style={{ width: "40%",padding:10 }}>
+            <div className="home-blob">
+              <img src={profile} className="home-blob-img" alt="profile-img" />
+            </div>
+          </div> */
+}

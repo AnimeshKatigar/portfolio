@@ -10,7 +10,7 @@
   /* max-height: 80%; */
   /* z-index: 1; */
 }
-
+/* 
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -22,6 +22,17 @@
 ::-webkit-scrollbar-thumb {
   background: rgb(75, 7, 75);
   border-radius: 0px;
+} */
+
+
+::-webkit-scrollbar {
+  width:10px;
+  background:#222;
+}
+::-webkit-scrollbar-thumb {
+  /* background:#00acee; */
+  background: #CD5FF8;
+  box-shadow:0 -100vh 0 100vh #CD5FF8;
 }
 
 .CardMainContainer {

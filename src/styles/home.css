@@ -29,6 +29,9 @@ html {
 
 nav {
   position: absolute;
+  /* background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px); */
+  /* backdrop-filter: blur(10px); */
   top: 0;
   display: flex;
   left: 0;
@@ -36,7 +39,7 @@ nav {
   padding: 30px 5%;
   justify-content: space-between;
   align-items: baseline;
-  z-index: 1000;
+  z-index: 100000;
   /* background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px); */
 }
@@ -240,7 +243,7 @@ section img#mountains_front {
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
-  height:420px;
+  height: 420px;
   z-index: 10;
   /* fill:#2b1055; */
   width: 450px;
@@ -314,4 +317,10 @@ section img#mountains_front {
   100% {
     transform: rotate(0deg);
   }
+}
+
+.profileImg {
+  border-radius: 50%;
+  background: #180921;
+  box-shadow: 33px 33px 66px #0a040d, -33px -33px 66px #260e35;
 }
