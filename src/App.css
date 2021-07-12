@@ -166,3 +166,21 @@
     transform: rotate(360deg);
   }
 }
+
+.scroll-to-top {
+  z-index: 5000;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

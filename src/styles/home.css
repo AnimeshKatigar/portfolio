@@ -324,3 +324,9 @@ section img#mountains_front {
   background: #180921;
   box-shadow: 33px 33px 66px #0a040d, -33px -33px 66px #260e35;
 }
+
+
+.about-list li{
+  list-style: none !important;
+  /* margin-left: 25px; */
+}

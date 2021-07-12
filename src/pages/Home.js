@@ -7,11 +7,8 @@ import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
 import mountains_behindImg from "../assets/mountains_behind.png";
 import mountains_frontImg from "../assets/mountains_front.png";
-import me from "../assets/alibaug.jpg";
-import haha from "../assets/hahaha.png";
-import blob from "../assets/blob.svg";
+import {CgGames} from 'react-icons/cg'
 import animeshImg from "../assets/animeshK.png";
-import { FaPortrait } from "react-icons";
 
 import "../styles/home.css";
 
@@ -164,8 +161,10 @@ function Home() {
               textAlign: "left",
             }}
           >
-            <div style={{ minHeight: 306, display: "flex",alignItems: "center"}}>
-              <div >
+            <div
+              style={{ minHeight: 276, display: "flex", alignItems: "center" }}
+            >
+              <div>
                 <h2>
                   Hi there! <span className="wave">👋🏻</span>
                   <br /> I am{" "}
@@ -210,9 +209,15 @@ function Home() {
                 </span>
                 &nbsp; like
                 <span style={{ color: "#CD5FF8" }}> ReactJS</span> and{" "}
-                <span style={{ color: "#CD5FF8" }}>NodeJS</span>. When not
-                coding you will see me playing football, gaming or binge
-                watching sitcoms.
+                <span style={{ color: "#CD5FF8" }}>NodeJS</span>.
+                <br />
+                Apart from coding, some other activities that I love to do!
+                <ul className="about-list">
+                  <li>‣ Playing Games 🎮</li>
+                  <li>‣ Treking 🏔️</li>
+                  <li>‣ Football ⚽</li>
+                  <li>‣ Listening to music 🎶</li>
+                </ul>
               </p>
             </div>
           </div>

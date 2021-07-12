@@ -82,6 +82,25 @@ const Cards = () => {
     <div className="CardMainContainer">
       <Particle />
       <h2 className="personalProjects">
+        <span style={{ color: "#CD5FF8" }}>Corporate</span> Projects
+      </h2>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {intprojects.map((project) => (
+          <ProjectCards
+            imgPath={project.img}
+            title={project.title}
+            description={project.desc}
+          />
+        ))}
+      </div>
+      <h2 className="personalProjects">
         <span style={{ color: "#CD5FF8" }}>Personal</span> Projects
       </h2>
       <div className="Card-container">
@@ -128,25 +147,7 @@ const Cards = () => {
           />
         </div>
       </div>
-      <h2 className="personalProjects">
-        <span style={{ color: "#CD5FF8" }}>Corporate</span> Projects
-      </h2>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        {intprojects.map((project) => (
-          <ProjectCards
-            imgPath={project.img}
-            title={project.title}
-            description={project.desc}
-          />
-        ))}
-      </div>
+
       <h2 className="personalProjects">
         <span style={{ color: "#CD5FF8" }}>Blog</span>
       </h2>

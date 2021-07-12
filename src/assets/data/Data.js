@@ -1,3 +1,32 @@
+import React from "react";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiPython,
+  DiGit,
+} from "react-icons/di";
+import {
+  SiPytorch,
+  SiTensorflow,
+  SiHtml5,
+  SiJavascript,
+  SiCss3,
+  SiPython,
+  SiReact,
+  SiMongodb,
+  SiPostgresql,
+  SiJava,
+  SiTypescript,
+  SiNodeDotJs,
+  SiGithub,
+  SiAdobexd,
+  SiAdobephotoshop,
+  SiFigma,
+  SiFirebase,
+} from "react-icons/si";
+
 export const Work = [
   {
     title: "NAMASYS Consultants Pvt Ltd, Delhi",
@@ -57,7 +86,185 @@ export const Education = [
     date: "2011 - 2016",
     content: [
       "Percentage: 92.60%",
-      "Became the first player to win an intra-school chess tournament consecutively for 2 years."
+      "Became the first player to win an intra-school chess tournament consecutively for 2 years.",
     ],
+  },
+];
+
+const languages = [
+  {
+    icon: <SiHtml5 />,
+    name: "HTML",
+  },
+  {
+    icon: <SiCss3 />,
+    name: "CSS",
+  },
+  {
+    icon: <SiJavascript />,
+    name: "JavaScript",
+  },
+  {
+    icon: <SiTypescript />,
+    name: "TypeScript",
+  },
+  {
+    icon: <SiPython />,
+    name: "Python",
+  },
+  {
+    icon: <SiJava />,
+    name: "JAVA",
+  },
+];
+
+const framework = [
+  {
+    icon: <SiReact />,
+    name: "ReactJS",
+  },
+  {
+    icon: <SiNodeDotJs />,
+    name: "NodeJS",
+  },
+  {
+    icon: <SiTensorflow />,
+    name: "Tensorflow",
+  },
+];
+
+const database = [
+  {
+    icon: <SiMongodb />,
+    name: "MongoDB",
+  },
+  {
+    icon: <SiPostgresql />,
+    name: "SQL",
+  },
+];
+const softwares = [
+  {
+    icon: <SiGithub />,
+    name: "GitHub",
+  },
+  {
+    icon: <SiAdobexd />,
+    name: "Adobe XD",
+  },
+  {
+    icon: <SiAdobephotoshop />,
+    name: "Photoshop",
+  },
+  {
+    icon: <SiFigma />,
+    name: "Figma",
+  },
+  {
+    icon: <SiFirebase />,
+    name: "Firebase",
+  },
+];
+
+export const skillset = [
+  {
+    title: "Languages",
+    content: (
+      <div
+        style={{
+          fontSize: "22px",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        {languages.map((lang) => (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              padding: "5px 0px",
+              marginLeft: "30px",
+            }}
+          >
+            {lang.icon}&nbsp;&nbsp;‣ &nbsp;<span>{lang.name}</span>
+          </div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    title: "Frameworks",
+    content: (
+      <div
+        style={{
+          fontSize: "22px",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        {framework.map((lang) => (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              padding: "5px 0px",
+              marginLeft: "30px",
+            }}
+          >
+            {lang.icon}&nbsp;&nbsp;‣ &nbsp;<span>{lang.name}</span>
+          </div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    title: "Database",
+    content: (
+      <div
+        style={{
+          fontSize: "22px",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        {database.map((lang) => (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              padding: "5px 0px",
+              marginLeft: "30px",
+            }}
+          >
+            {lang.icon}&nbsp;&nbsp;‣ &nbsp;<span>{lang.name}</span>
+          </div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    title: "Softwares",
+    content: (
+      <div
+        style={{
+          fontSize: "22px",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        {softwares.map((lang) => (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              padding: "5px 0px",
+              marginLeft: "30px",
+            }}
+          >
+            {lang.icon}&nbsp;&nbsp;‣ &nbsp;<span>{lang.name}</span>
+          </div>
+        ))}
+      </div>
+    ),
   },
 ];

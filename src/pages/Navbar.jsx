@@ -4,17 +4,12 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [selected, setSelected] = useState(0);
-  // const [toggle, setToggle] = useState(false);
-  // const handleClick = () => {
-  //   setToggle(!toggle);
-  //   console.log(toggle);
-  // };
+ 
   return (
     <div className="navbarMainContainer">
       <nav>
         <a href="/" className="logo">
-          {/* Ani<span style={{ color: "#CD5FF8" }}>ME</span>sh */}
-          Animesh
+          Ani<span style={{ color: "#CD5FF8" }}>ME</span>sh
         </a>
         {/* <div className="Hamburger" style={{cursor: "pointer"}} onclick={handleClick}>
           <div className="Line"></div>
@@ -30,16 +25,6 @@ function Navbar() {
               }
             >
               Home
-            </a>
-          </li>
-          <li onClick={() => setSelected(1)}>
-            <a
-              href="/"
-              className={
-                selected == 1 && window.location.pathname == "/" && "active"
-              }
-            >
-              About
             </a>
           </li>
           <li onClick={() => setSelected(2)}>
