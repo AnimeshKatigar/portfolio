@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
+import up from "./assets/up.png"
 
 export default class ScrollToTop extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ export default class ScrollToTop extends Component {
       <div className="scroll-to-top">
         {is_visible && (
           <div onClick={() => this.scrollToTop()}>
-            <FaArrowCircleUp />
+            <img src={up}/>
           </div>
         )}
       </div>

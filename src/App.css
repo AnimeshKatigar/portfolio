@@ -170,8 +170,8 @@
 .scroll-to-top {
   z-index: 5000;
   position: fixed;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  bottom: 1rem;
+  right: 1.5rem;
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
 }

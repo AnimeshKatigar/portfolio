@@ -145,8 +145,8 @@
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #CD5FF8 !important;
+  border-color: #CD5FF8 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -161,4 +161,29 @@
   border-radius: 50px;
   background: #24172b;
   box-shadow: 35px 35px 70px #0e0911, -35px -35px 70px #3a2545;
+}
+
+.skills-heading{
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #CD5FF8;
+}
+
+@media (max-width:450px){
+  .resume .resume-title{
+    font-size:7vw !important;
+  }
+  .skills-container{
+    width:250px !important;
+    min-height:auto
+  }
+  .skills-heading{
+    font-size: 5vw !important;
+  }
+  .skills-container div{
+    font-size: 4.5vw;
+  }
+  .resume .resume-item ul{
+    font-size: 4.2vw !important;
+  }
 }

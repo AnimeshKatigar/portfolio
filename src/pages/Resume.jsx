@@ -4,7 +4,7 @@ import Particle from "../styles/Particle";
 import Resumecontent from "./ResumeContent";
 import pdf from "../assets/Resume_Animesh_Katigar.pdf";
 import "../styles/resume.css";
-import { Work, Education, skillset } from "../assets/data/Data";
+import { Work, Education, skillset, skillset1 } from "../assets/data/Data";
 
 function Resume() {
   return (
@@ -29,19 +29,30 @@ function Resume() {
                   alignItems: "center",
                 }}
               >
-                {skillset.map((skill) => (
-                  <div className="skills-container">
-                    <p
-                      style={{
-                        fontSize: "25px",
-                        marginBottom: "10px",
-                        color: "#CD5FF8",
-                      }}
-                    >
-                      {skill.title}
-                    </p>
-                    {skill.content}
-                  </div>
+                {skillset.map((skill, id) => (
+                  <>
+                    <div className="skills-container">
+                      <p className="skills-heading">{skill.title}</p>
+                      {skill.content}
+                    </div>
+                  </>
+                ))}
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                {skillset1.map((skill, id) => (
+                  <>
+                    <div className="skills-container">
+                      <p className="skills-heading">{skill.title}</p>
+                      {skill.content}
+                    </div>
+                  </>
                 ))}
               </div>
             </div>

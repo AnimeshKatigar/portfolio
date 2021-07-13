@@ -7,7 +7,7 @@ import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
 import mountains_behindImg from "../assets/mountains_behind.png";
 import mountains_frontImg from "../assets/mountains_front.png";
-import {CgGames} from 'react-icons/cg'
+import { CgGames } from "react-icons/cg";
 import animeshImg from "../assets/animeshK.png";
 
 import "../styles/home.css";
@@ -98,22 +98,8 @@ function Home() {
         />
       </section>
       <div className="sec" id="sec">
-        <div
-          style={{
-            display: "flex",
-            marginBottom: "15px",
-            justifyContent: "space-between",
-            width: "100%",
-          }}
-        >
-          <div
-            style={{
-              width: "40%",
-              display: "flex",
-              flexDirection: "column",
-              textAlign: "left",
-            }}
-          >
+        <div className="about-container">
+          <div className="personal-details">
             <div>
               <img
                 alt="ProfileImage"
@@ -125,9 +111,7 @@ function Home() {
             </div>
 
             <h2>Personal Details</h2>
-            <div
-              style={{ display: "flex", flexWrap: "wrap", margin: "20px 0px" }}
-            >
+            <div className="profile-details">
               {details.map((detail) => (
                 <>
                   <div
@@ -153,14 +137,7 @@ function Home() {
               ))}
             </div>
           </div>
-          <div
-            style={{
-              width: "60%",
-              display: "flex",
-              flexDirection: "column",
-              textAlign: "left",
-            }}
-          >
+          <div className="about-me">
             <div
               style={{ minHeight: 276, display: "flex", alignItems: "center" }}
             >
@@ -186,7 +163,12 @@ function Home() {
               </div>
             </div>{" "}
             <div
-              style={{ textAlign: "left", marginTop: "50px", width: "100%" }}
+              style={{
+                textAlign: "left",
+                marginTop: "50px",
+                width: "100%",
+                fontWeight: 300,
+              }}
             >
               <h1 style={{ fontSize: "2.2em", fontWeight: "600" }}>
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
@@ -214,7 +196,7 @@ function Home() {
                 Apart from coding, some other activities that I love to do!
                 <ul className="about-list">
                   <li>‣ Playing Games 🎮</li>
-                  <li>‣ Treking 🏔️</li>
+                  <li>‣ Traveling 🏔️</li>
                   <li>‣ Football ⚽</li>
                   <li>‣ Listening to music 🎶</li>
                 </ul>

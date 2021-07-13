@@ -172,7 +172,7 @@ export const skillset = [
     content: (
       <div
         style={{
-          fontSize: "22px",
+          fontSize: "20px",
           display: "flex",
           flexDirection: "column",
         }}
@@ -197,7 +197,7 @@ export const skillset = [
     content: (
       <div
         style={{
-          fontSize: "22px",
+          fontSize: "20px",
           display: "flex",
           flexDirection: "column",
         }}
@@ -217,12 +217,16 @@ export const skillset = [
       </div>
     ),
   },
+  
+];
+
+export const skillset1=[
   {
-    title: "Database",
+    title: "Databases",
     content: (
       <div
         style={{
-          fontSize: "22px",
+          fontSize: "20px",
           display: "flex",
           flexDirection: "column",
         }}
@@ -247,7 +251,7 @@ export const skillset = [
     content: (
       <div
         style={{
-          fontSize: "22px",
+          fontSize: "20px",
           display: "flex",
           flexDirection: "column",
         }}
@@ -267,4 +271,4 @@ export const skillset = [
       </div>
     ),
   },
-];
+]

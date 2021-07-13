@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "../styles/home.css";
-import { Link } from "react-router-dom";
+import {
+  AiOutlineFundProjectionScreen,
+  AiOutlineProfile,
+  AiOutlineHome,
+} from "react-icons/ai";
 
 function Navbar() {
   const [selected, setSelected] = useState(0);
- 
+
   return (
     <div className="navbarMainContainer">
       <nav>
@@ -23,8 +27,30 @@ function Navbar() {
               className={
                 selected == 0 && window.location.pathname == "/" && "active"
               }
+              style={{ display: "flex", alignItems: "center" }}
             >
-              Home
+              <span className="navbar-text">Home</span>
+              <span className="navbar-icons">
+                {" "}
+                <AiOutlineHome />
+              </span>
+            </a>
+          </li>
+
+          <li onClick={() => setSelected(3)}>
+            <a
+              href="/resume"
+              className={
+                selected == 3 ||
+                (window.location.pathname == "/resume" && "active")
+              }
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <span className="navbar-text">Resume</span>
+              <span className="navbar-icons">
+                {" "}
+                <AiOutlineProfile />
+              </span>
             </a>
           </li>
           <li onClick={() => setSelected(2)}>
@@ -34,18 +60,12 @@ function Navbar() {
                 selected == 2 ||
                 (window.location.pathname == "/project" && "active")
               }
+              style={{ display: "flex", alignItems: "center" }}
             >
-              Work
-            </a>
-          </li>
-          <li onClick={() => setSelected(3)}>
-            <a
-              href="/resume"
-              className={
-                selected == 3 || window.location.pathname == "/resume" && "active"
-              }
-            >
-              Resume
+              <span className="navbar-text">Work</span>
+              <span className="navbar-icons">
+                <AiOutlineFundProjectionScreen />
+              </span>
             </a>
           </li>
         </ul>
@@ -56,7 +76,6 @@ function Navbar() {
 
 export default Navbar;
 
-
 // import React, { useState } from "react";
 // import Navbar from "react-bootstrap/Navbar";
 // import Nav from "react-bootstrap/Nav";
@@ -64,7 +83,6 @@ export default Navbar;
 // import Button from "react-bootstrap/Button";
 // import { Link } from "react-router-dom";
 // import "../styles/navbar.css";
-
 
 // function NavBar() {
 //   const [expand, updateExpanded] = useState(false);
@@ -124,7 +142,7 @@ export default Navbar;
 //                 to="/project"
 //                 onClick={() => updateExpanded(false)}
 //               >
-               
+
 //                 Projects
 //               </Nav.Link>
 //             </Nav.Item>

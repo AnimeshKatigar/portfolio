@@ -3,7 +3,7 @@ import "../styles/resume.css";
 
 function ResumeContent(props) {
   return (
-    <div style={{ display: "flex",paddingLeft:15}}>
+    <div style={{ display: "flex", paddingLeft: 15 }}>
       <p className="date-div">
         <em>{props.date}</em>
       </p>
@@ -14,7 +14,7 @@ function ResumeContent(props) {
             {props.desc}
           </p>
         </h4>
-        <ul style={{paddingBottom:20}}>
+        <ul style={{ paddingBottom: 20 }}>
           {props.content.map((value, index) => (
             <li key={index}> ‣ {value}</li>
           ))}
