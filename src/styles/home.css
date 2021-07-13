@@ -12,7 +12,7 @@ html {
   --image-gradient: linear-gradient(
     to bottom left,
     #1c0522,
-    /* rgba(17, 16, 16, 0.678), */ rgba(12, 10, 22, 0.863)
+    rgba(12, 10, 22, 0.863)
   );
   --section-background-color: linear-gradient(
     to bottom left,
@@ -29,9 +29,6 @@ html {
 
 nav {
   position: absolute;
-  /* background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px); */
-  /* backdrop-filter: blur(10px); */
   top: 0;
   display: flex;
   left: 0;
@@ -40,8 +37,6 @@ nav {
   justify-content: space-between;
   align-items: baseline;
   z-index: 100000;
-  /* background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px); */
 }
 
 nav .logo {
@@ -114,7 +109,6 @@ section img#moon {
 #text {
   position: absolute;
   color: #fff;
-  /* right: -360px; */
   white-space: nowrap;
   font-size: 4vw;
   z-index: 9;
@@ -141,10 +135,8 @@ section img#mountains_front {
   background-image: var(--image-gradient), url(../assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  /* background:#1c0522; */
   padding: 100px;
   z-index: 12;
-  /* background:linear-gradient(to bottom, transparent, #2b1055); */
   font-size: 1.2em;
   color: #fff;
 }
@@ -154,22 +146,6 @@ section img#mountains_front {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
-/* @media (max-width: 600px) {
-  
-  .MainHomeScreen {
-    zoom: 0.8;
-    margin: 0 auto;
-    min-width: 90vh;
-  }
-  .sec {
-    padding: 32px;
-  }
-
-  nav {
-    padding: 25px 50px;
-  }
-} */
 
 #tsparticles {
   position: fixed !important;
@@ -225,40 +201,6 @@ section img#mountains_front {
     color: #fff;
     border-radius: 20px;
   }
-
-  nav ul li {
-    /* margin: 20px 0px; */
-  }
-}
-
-.home-blob {
-  /* fill: #2b1055; */
-  position: relative;
-  background-image: url(../assets/blob.svg);
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: hidden;
-  height: 420px;
-  z-index: 10;
-  /* fill:#2b1055; */
-  width: 450px;
-  /* width: 400px; */
-  /* height: 200px; */
-}
-
-.home-blob-img {
-  z-index: -2;
-  /* position: absolute;
-  left: 10;
-  bottom:5; */
-  /* bottom: 5; */
-  /* height:380px; */
-  /* fill:#2b1055; */
-  /* width: 280px; */
-  /* width: 300px; */
 }
 
 .Typewriter__wrapper {

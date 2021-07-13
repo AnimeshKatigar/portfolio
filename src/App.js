@@ -1,6 +1,5 @@
 import "./App.css";
 import { Switch, Route, Router } from "react-router-dom";
-import ScrollToTop from "react-scroll-up";
 import history from "./routes/createHistory";
 import Home from "./pages/Home";
 import Cards from "./pages/Cards";
@@ -24,8 +23,6 @@ function App() {
         <Scroll/>
         <Footer />
       </Router>
-      {/* <Routes/> */}
-      {/* <Home/> */}
     </div>
   );
 }

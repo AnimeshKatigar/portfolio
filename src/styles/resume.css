@@ -6,7 +6,6 @@
   color: white !important;
   display: flex;
   flex-grow: 1;
-  /* height: auto; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -29,8 +28,7 @@
 
 .resume-left {
   margin: 0 auto;
-  /* display: flex; */
-  /* justify-content: space-between; */
+ 
   width: 80% !important;
 }
 
@@ -41,8 +39,6 @@
 @media (max-width: 767px) {
   .resume-left {
     width: 90% !important;
-    /* padding-right: 15px !important;
-    padding-left: 15px !important; */
   }
 
   .resume-right {
@@ -138,9 +134,6 @@
   font-size: 1.1em;
   cursor: pointer;
   border-radius: 40px;
-  /* color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important; */
 }
 
 .btn-primary:hover {
