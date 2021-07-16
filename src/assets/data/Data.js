@@ -63,7 +63,7 @@ export const Education = [
     desc: "B.E Information Technology",
     date: "2018 - Present",
     content: [
-      "CGPA:8.95 (Till 5th Sem)",
+      "CGPA:9.10 (Till 6th Sem)",
       "Core Member of Creative Council (2018-2020)",
       "Core Member of Technical Group of ITSA committee (2019-2020)",
     ],
