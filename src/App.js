@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Switch, Route, Router } from "react-router-dom";
 import history from "./routes/createHistory";
@@ -9,8 +10,25 @@ import Particles from "./styles/Particle";
 import Resume from "./pages/Resume";
 import Scroll from "./Scroll";
 
+const Loading = () => (
+  <div className="loadingDiv">
+    <div className="loading">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+);
+
 function App() {
-  return (
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1700);
+  }, []);
+  return loading ? (
+    <Loading />
+  ) : (
     <div className="App">
       <Router history={history}>
         <Particles />
@@ -20,7 +38,7 @@ function App() {
           <Route exact path="/project" component={Cards} />
           <Route exact path="/resume" component={Resume} />
         </Switch>
-        <Scroll/>
+        <Scroll />
         <Footer />
       </Router>
     </div>
