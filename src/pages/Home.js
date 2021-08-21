@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-lone-blocks */
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Typewriter from "typewriter-effect";
 
 import moonImg from "../assets/moon.png";
@@ -38,16 +38,33 @@ function Home() {
       true
     );
   });
-
+  const [loading, setLoading] = useState(true);
+  const counter = useRef(0);
+  const imageLoaded = () => {
+    counter.current += 1;
+    if (counter.current >= 4) {
+      setLoading(false);
+    }
+  };
   return (
     <div className="MainHomeScreen">
-      <section>
-        <img src={starsImg} id="stars" alt="stars" />
-        <img src={moonImg} id="moon" alt="moon" />
+      <div
+        className="loadingDiv"
+        style={{ display: loading ? "flex" : "none" }}
+      >
+        <div className="loading">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <section style={{ display: loading ? "none" : "flex" }}>
+        <img src={starsImg} id="stars" alt="stars" onLoad={imageLoaded} />
+        <img src={moonImg} id="moon" alt="moon" onLoad={imageLoaded} />
         <img
           src={mountains_behindImg}
           id="mountains_behind"
           alt="mountains_behind"
+          onLoad={imageLoaded}
         />
         <h2 id="text">
           <span id="hey">Hello</span> <span id="there">World </span>
@@ -69,6 +86,7 @@ function Home() {
           src={mountains_frontImg}
           id="mountains_front"
           alt="mountains_front"
+          onLoad={imageLoaded}
         />
       </section>
       <div className="sec" id="sec">

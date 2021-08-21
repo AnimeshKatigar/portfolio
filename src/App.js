@@ -26,9 +26,7 @@ function App() {
       setLoading(false);
     }, 1700);
   }, []);
-  return loading ? (
-    <Loading />
-  ) : (
+  return (
     <div className="App">
       <Router history={history}>
         <Particles />
