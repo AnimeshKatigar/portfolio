@@ -7,6 +7,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { projects, intprojects } from "../assets/data/Data";
 
 const Cards = () => {
+  
   return (
     <div className="CardMainContainer">
       <Particle />
