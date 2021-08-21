@@ -41,41 +41,104 @@
         color: #000;
         overflow-y: hidden;
       }
-      
-      .loader .heading {
-        font-size: 36px;
-        text-align: center;
-        animation: heart-beat 4s infinite ease-in;
-        z-index: 1;
+
+      .timer {
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        box-shadow: inset 0px 0px 0px 2px #fff;
+        border-radius: 50%;
+        position: relative;
+        /* margin: 38px auto; Not necessary- its only for layouting */
       }
-      
-      .loader .sub-heading {
-        font-size: 18px;
-        text-align: center;
-        color: #4b4b4b;
-        z-index: 1;
+      .timer:after,
+      .timer:before {
+        position: absolute;
+        content: "";
+        background-color: #fff;
       }
-      
-      @keyframes heart-beat {
+      .timer:after {
+        width: 10px;
+        height: 2px;
+        top: 11px;
+        left: 11px;
+        -webkit-transform-origin: 1px 1px;
+        -moz-transform-origin: 1px 1px;
+        transform-origin: 1px 1px;
+        -webkit-animation: minhand 2s linear infinite;
+        -moz-animation: minhand 2s linear infinite;
+        animation: minhand 2s linear infinite;
+      }
+
+      .timer:before {
+        width: 8px;
+        height: 2px;
+        top: 11px;
+        left: 11px;
+        -webkit-transform-origin: 1px 1px;
+        -moz-transform-origin: 1px 1px;
+        transform-origin: 1px 1px;
+        -webkit-animation: hrhand 8s linear infinite;
+        -moz-animation: hrhand 8s linear infinite;
+        animation: hrhand 8s linear infinite;
+      }
+
+      @-webkit-keyframes minhand {
         0% {
-          opacity: 0.1;
-        }
-        50% {
-          opacity: 1;
+          -webkit-transform: rotate(0deg);
         }
         100% {
-          opacity: 0.1;
+          -webkit-transform: rotate(360deg);
         }
       }
-      
-      </style>
+      @-moz-keyframes minhand {
+        0% {
+          -moz-transform: rotate(0deg);
+        }
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @keyframes minhand {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes hrhand {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes hrhand {
+        0% {
+          -moz-transform: rotate(0deg);
+        }
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @keyframes hrhand {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
       <section class="loader">
-        <h1 class="heading">INITIALIZING</h1>
-        <p class="sub-heading">bear with us ...</p>
+        <div class="timer"></div>
       </section>
     </div>
     <!--
