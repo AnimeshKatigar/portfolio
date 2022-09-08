@@ -27,7 +27,7 @@ import {
 export const Work = [
   {
     title: "NAMASYS Consultants Pvt Ltd, Delhi",
-    desc: "Frontend Web Developer",
+    desc: "Frontend Web Developer (Intern)",
     date: "March 2021 - June 2021",
     content: [
       "Worked on 5 Projects: NUWEBAPP (AI app), Project Management (Task manager), FINESSE STEALTH (Ecommerce app), SACRD (Financial app) and NAMASYS TABLE (Flexible Table Package).",
@@ -38,7 +38,7 @@ export const Work = [
   },
   {
     title: "THE VOUCH Digital, Mumbai",
-    desc: "Frontend Web Developer",
+    desc: "Frontend Web Developer (Intern)",
     date: "November 2020 - January 2021",
     content: [
       "Worked on frontend part of VAVO Web application. This project was aimed at marketing of brands, where the brands can hire influencers to market their products.",
@@ -48,7 +48,7 @@ export const Work = [
   },
   {
     title: "MEACCS INNOVATIONS, Haryana",
-    desc: "HR intern",
+    desc: "HR Intern",
     date: "November 2020 - December 2021",
     content: [
       "Helped the supervisors for shortlisting, communicating and hiring candidates.",
@@ -61,9 +61,9 @@ export const Education = [
   {
     title: "Vidyalankar Institute of Technology, Wadala",
     desc: "B.E Information Technology",
-    date: "2018 - Present",
+    date: "2018 - 2022",
     content: [
-      "CGPA:9.10 (Till 6th Sem)",
+      "CGPA:9.10",
       "Core Member of Creative Council (2018-2020)",
       "Core Member of Technical Group of ITSA committee (2019-2020)",
     ],
