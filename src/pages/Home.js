@@ -7,7 +7,7 @@ import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
 import mountains_behindImg from "../assets/mountains_behind.png";
 import mountains_frontImg from "../assets/mountains_front.png";
-import animeshImg from "../assets/animeshK.png";
+import animeshImg from "../assets/sscrop.png";
 import { details } from "../assets/data/Data";
 import "../styles/home.css";
 
