@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-lone-blocks */
 import React, { useEffect, useState, useRef } from "react";
-import Typewriter from "typewriter-effect";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
@@ -9,6 +8,7 @@ import mountains_behindImg from "../assets/mountains_behind.png";
 import mountains_frontImg from "../assets/mountains_front.png";
 import animeshImg from "../assets/sscrop.png";
 import { details } from "../assets/data/Data";
+import { TypeAnimation } from "react-type-animation";
 import "../styles/home.css";
 
 function Home() {
@@ -145,18 +145,24 @@ function Home() {
                   <br /> I am{" "}
                   <span style={{ color: "#CD5FF8" }}>Animesh Katigar</span>
                 </h2>
-
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Software Developer",
-                      "IT Graduate",
-                      "Freelance developer",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    deleteSpeed: 50,
+                <TypeAnimation
+                  sequence={[
+                    "Software Developer",
+                    3000,
+                    "IT Graduate",
+                    3000,
+                    "Freelance developer",
+                    3000,
+                  ]}
+                  wrapper="span"
+                  speed={30}
+                  style={{
+                    fontSize: "2.2em",
+                    display: "inline-block",
+                    color: "#be6adf",
+                    fontWeight: 600,
                   }}
+                  repeat={Infinity}
                 />
               </div>
             </div>{" "}
