@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Particle from "../styles/Particle";
 import Resumecontent from "./ResumeContent";
 import pdf from "../assets/Resume_Animesh_Katigar.pdf";
 import "../styles/resume.css";
@@ -9,7 +8,6 @@ import { Work, Education, skillset, skillset1 } from "../assets/data/Data";
 function Resume() {
   return (
     <div className="CardMainSection resume-section">
-      <Particle />
       <div className="">
         <Button variant="primary" href={pdf} target="_blank">
           <i class="fa fa-download"></i>

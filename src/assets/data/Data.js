@@ -4,9 +4,10 @@ import nuwebapp from "../NuwebApp.png";
 import pms from "../PMS.png";
 import finesse from "../finesse.png";
 import vavo from "../vavo.png";
+import streamWebsite from "../StreamWebsite.png";
+import jiogamesWatch from "../JioGamesWatch.png";
 
 import {
-  SiTensorflow,
   SiHtml5,
   SiJavascript,
   SiCss3,
@@ -14,17 +15,43 @@ import {
   SiReact,
   SiMongodb,
   SiPostgresql,
-  SiJava,
+  SiExpress,
   SiTypescript,
-  SiNodeDotJs,
+  SiNodedotjs,
   SiGithub,
   SiAdobexd,
   SiAdobephotoshop,
   SiFigma,
-  SiFirebase,
+  SiSwift,
+  SiDocker,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export const Work = [
+  {
+    title: "Jio Platforms Limited, Mumbai",
+    desc: "Software Engineer",
+    date: "July 2022 - Present",
+    content: [
+      "Working as a Software Engineer in the Jio Platforms, where I am responsible for developing and maintaining the web applications.",
+      "Led the development of JioStream Studio with Next.js, migrating old admin and creator portals to a unified, modern platform, while building the SuperAdmin portal from ground up to manage tenants, features, and plans for the Studio.",
+      <span>
+        Developed the team's website ({" "}
+        <a
+          href="https://stream.jio"
+          target="_blank"
+          rel="noreferrer"
+          className="resumeAnchorTag"
+        >
+          stream.jio
+        </a>{" "}
+        ) collaborating with designers and PMs for a modern UI enriched with
+        subtle animations and transitions.
+      </span>,
+      "Took charge of the iOS Reels SDK development using Swift and Objective-C, addressing new client requirements and optimising the SDK size by 20%",
+      "Built web portals for product catalog uploads using ReactJS and Redux, and created reusable component libraries for multiple projects.",
+    ],
+  },
   {
     title: "NAMASYS Consultants Pvt Ltd, Delhi",
     desc: "Frontend Web Developer (Intern)",
@@ -106,27 +133,31 @@ const languages = [
     name: "TypeScript",
   },
   {
-    icon: <SiPython />,
-    name: "Python",
+    icon: <SiSwift />,
+    name: "Swift",
   },
   {
-    icon: <SiJava />,
-    name: "JAVA",
+    icon: <SiPython />,
+    name: "Python",
   },
 ];
 
 const framework = [
   {
+    icon: <SiNextdotjs />,
+    name: "NextJS",
+  },
+  {
     icon: <SiReact />,
     name: "ReactJS",
   },
   {
-    icon: <SiNodeDotJs />,
+    icon: <SiNodedotjs />,
     name: "NodeJS",
   },
   {
-    icon: <SiTensorflow />,
-    name: "Tensorflow",
+    icon: <SiExpress />,
+    name: "ExpressJS",
   },
 ];
 
@@ -140,10 +171,10 @@ const database = [
     name: "SQL",
   },
 ];
-const softwares = [
+const tools = [
   {
     icon: <SiGithub />,
-    name: "GitHub",
+    name: "Git",
   },
   {
     icon: <SiAdobexd />,
@@ -158,8 +189,8 @@ const softwares = [
     name: "Figma",
   },
   {
-    icon: <SiFirebase />,
-    name: "Firebase",
+    icon: <SiDocker />,
+    name: "Docker",
   },
 ];
 
@@ -243,7 +274,7 @@ export const skillset1 = [
     ),
   },
   {
-    title: "Softwares",
+    title: "Tools",
     content: (
       <div
         style={{
@@ -252,7 +283,7 @@ export const skillset1 = [
           flexDirection: "column",
         }}
       >
-        {softwares.map((lang) => (
+        {tools.map((lang) => (
           <div
             style={{
               display: "flex",
@@ -277,7 +308,7 @@ export const details = [
   },
   {
     title: "Location",
-    desc: "Dadar, Mumbai",
+    desc: "Mumbai",
   },
   {
     title: "Phone No.",
@@ -286,10 +317,6 @@ export const details = [
   {
     title: "E-mail ID",
     desc: "katigaranimesh@gmail.com",
-  },
-  {
-    title: "Nationality",
-    desc: "Indian",
   },
 ];
 
@@ -308,22 +335,22 @@ export const projects = [
     desc: "A simple minimalistic web app that displays live information of the crypto coins such as Bitcoin, Ethereum, Dogecoin, etc.",
     link: "https://cryptocurrency-tracker-1310.netlify.app/",
   },
+  // {
+  //   no: "03",
+  //   codeLink: "https://github.com/AnimeshKatigar/Weather",
+  //   title: "Weather Website",
+  //   desc: "This is a weather website which shows the current weather of the city we mentioned.",
+  //   link: "https://infinite-earth-32951.herokuapp.com/",
+  // },
   {
     no: "03",
-    codeLink: "https://github.com/AnimeshKatigar/Weather",
-    title: "Weather Website",
-    desc: "This is a weather website which shows the current weather of the city we mentioned.",
-    link: "https://infinite-earth-32951.herokuapp.com/",
-  },
-  {
-    no: "04",
     codeLink: "https://github.com/AnimeshKatigar/SimonGame",
     title: "The Simon Game",
     desc: "Everyone has played The Simon Game once in his/her life, this site will bring that nostalgia ❤",
     link: "https://animeshkatigar.github.io/SimonGame/",
   },
   {
-    no: "05",
+    no: "04",
     codeLink: "https://github.com/AnimeshKatigar/Drumkit",
     title: "Drumkit",
     desc: "A Drumkit website that plays the sound of a specific instrument",
@@ -332,6 +359,16 @@ export const projects = [
 ];
 
 export const intprojects = [
+  {
+    title: "JioStream",
+    desc: "Jiostream is a Video commerce platform that creates shoppable videos for brands and influencers. I was responsible for developing and maintaining the web applications and websites.",
+    img: streamWebsite,
+  },
+  {
+    title: "JioGames Watch",
+    desc: "JioGames Watch is a content SaaS application which enables users to stream their favorite games and watch live streams. My responsibility was to develop, and improve performance for the application on mobile and web platforms.",
+    img: jiogamesWatch,
+  },
   {
     title: "FINESSE",
     desc: "FINESSE is a fashion e-commerce web application, which was made for a fashion company from U.S.A. My responsibility was to make the homepage responsive to small screens.",

@@ -1,16 +1,13 @@
 import React from "react";
 import "../styles/cards.css";
-import Particle from "../styles/Particle";
 import space from "../assets/image.png";
 import ProjectCards from "./ProjectCards";
 import { AiFillGithub } from "react-icons/ai";
 import { projects, intprojects } from "../assets/data/Data";
 
 const Cards = () => {
-  
   return (
     <div className="CardMainContainer">
-      <Particle />
       <h2 className="personalProjects">
         <span style={{ color: "#CD5FF8" }}>Corporate</span> Projects
       </h2>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import up from "./assets/up.png"
+import { FaAngleUp } from "react-icons/fa6";
 
 export default class ScrollToTop extends Component {
   constructor(props) {
@@ -38,12 +38,13 @@ export default class ScrollToTop extends Component {
   render() {
     const { is_visible } = this.state;
     return (
-      <div className="scroll-to-top">
-        {is_visible && (
-          <div onClick={() => this.scrollToTop()}>
-            <img src={up} alt="scroll-up"/>
-          </div>
-        )}
+      <div className="scroll-to-top-container">
+        <div
+          className={`scroll-to-top ${is_visible ? "show" : "hide"}`}
+          onClick={() => this.scrollToTop()}
+        >
+          <FaAngleUp size={24} />
+        </div>
       </div>
     );
   }

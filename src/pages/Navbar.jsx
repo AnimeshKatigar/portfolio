@@ -57,7 +57,7 @@ function Navbar() {
               }
               style={{ display: "flex", alignItems: "center" }}
             >
-              <span className="navbar-text">Work</span>
+              <span className="navbar-text">Projects</span>
               <span className="navbar-icons">
                 <AiOutlineFundProjectionScreen />
               </span>

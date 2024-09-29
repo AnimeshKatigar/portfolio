@@ -2,7 +2,7 @@
 /* eslint-disable no-lone-blocks */
 import React, { useEffect, useState, useRef } from "react";
 import Typewriter from "typewriter-effect";
-
+import { BsChevronDoubleDown } from "react-icons/bs";
 import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
 import mountains_behindImg from "../assets/mountains_behind.png";
@@ -79,8 +79,14 @@ function Home() {
               inline: "nearest",
             });
           }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "10px",
+            alignItems: "center",
+          }}
         >
-          Explore
+          Welcome <BsChevronDoubleDown size={18} />
         </a>
         <img
           src={mountains_frontImg}
@@ -143,8 +149,8 @@ function Home() {
                 <Typewriter
                   options={{
                     strings: [
-                      "IT Student",
-                      "ReactJS Developer",
+                      "Software Developer",
+                      "IT Graduate",
                       "Freelance developer",
                     ],
                     autoStart: true,
@@ -167,31 +173,31 @@ function Home() {
               </h1>
               <br />
               <p className="home-about-body">
-                A self-taught, hardworking, and organized individual who loves
-                to make things that live on the internet. My strength lies in
-                designing, developing, and testing websites. I am fluent in
-                classics like
-                <span style={{ color: "#CD5FF8" }}> Javascript</span> and{" "}
-                <span style={{ color: "#CD5FF8" }}>Python</span>.
+                A passionate, self-taught software developer who thrives on
+                creating digital experiences that make an impact. I specialize
+                in designing, developing, and optimizing websites and apps 💻.
+                <br />
+                My expertise extends to
+                <span style={{ color: "#CD5FF8" }}> Javascript</span>,
+                <span style={{ color: "#CD5FF8" }}> NextJS </span> ,
+                <span style={{ color: "#CD5FF8" }}> ReactJS</span>, and{" "}
+                <span style={{ color: "#CD5FF8" }}> NodeJS</span> where I bring
+                ideas to life on the internet 🌐.
                 <br />
                 <br />
-                Whenever possible, I apply my passion for developing products
-                with
-                <span style={{ color: "#CD5FF8" }}>
-                  {" "}
-                  Modern Javascript Frameworks
-                </span>
-                &nbsp; like
-                <span style={{ color: "#CD5FF8" }}> ReactJS</span> and{" "}
-                <span style={{ color: "#CD5FF8" }}>NodeJS</span>.
-                <br />
-                Apart from coding, some other activities that I love to do!
+                Beyond coding, I'm also deeply interested in exploring new
+                places 🌍, Tech innovations ⚙️, Music 🎶, Chess ♜ and a good
+                dose of adrenaline—whether that's through biking 🏍️, playing
+                football ⚽, or gaming 🎮.
+                {/* Apart from coding, some other activities that I love to do!
                 <ul className="about-list">
-                  <li>‣ Playing Games 🎮</li>
+                  <li>‣ Video Games 🎮</li>
                   <li>‣ Traveling 🏔️</li>
+                  <li>‣ Bike Riding 🚦</li>
+                  <li>‣ Chess ♟️</li>
                   <li>‣ Football ⚽</li>
                   <li>‣ Listening to music 🎶</li>
-                </ul>
+                </ul> */}
               </p>
             </div>
           </div>

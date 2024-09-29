@@ -36,6 +36,10 @@
   padding-left: 80px !important;
 }
 
+.resumeAnchorTag{
+  color: #fff !important;
+}
+
 @media (max-width: 767px) {
   .resume-left {
     width: 90% !important;

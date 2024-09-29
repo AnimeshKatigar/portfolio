@@ -87,15 +87,6 @@
 }
 
 .footer {
-  /* background:linear-gradient(#2b1055, #7597de); */
-
-  /* background-image: linear-gradient(
-    to bottom left,
-    #1c0522,
-    rgba(12, 10, 22, 0.863)
-  );
-  background-position: top center;
-  background-repeat: no-repeat; */
   display: flex;
   width: 100%;
   align-items: center;
@@ -167,14 +158,43 @@
   }
 }
 
-.scroll-to-top {
+.scroll-to-top-container{
   z-index: 5000;
   position: fixed;
   bottom: 1rem;
   right: 1.5rem;
-  animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
 }
+
+.scroll-to-top {
+  border-radius: 9999px;
+  color: #fefefe;
+  background: #d26dfa;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  opacity: 0; /* Initially hidden */
+  position: fixed; /* Fixed position for scroll button */
+  bottom: 20px; /* Adjust positioning */
+  right: 20px;
+  transform: scale(0.9); /* Slightly smaller at the start */
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  transform: scale(1); /* Full size when visible */
+}
+
+.scroll-to-top.hide {
+  opacity: 0;
+  transform: scale(0.9); /* Fade out and scale down when hidden */
+}
+
 
 @keyframes fadeIn {
   from {
