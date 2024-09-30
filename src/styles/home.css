@@ -263,6 +263,8 @@ section img#mountains_front {
 
 .profileImg {
   border-radius: 50%;
+  object-fit: cover;
+  margin-left: 5%;
   background: #180921;
   box-shadow: 33px 33px 66px #0a040d, -33px -33px 66px #260e35;
 }
@@ -365,6 +367,9 @@ section img#mountains_front {
 @media (max-width: 600px) {
   .profile-details {
     width: 90%;
+  }
+  .profileImg{
+    margin-left: 0%;
   }
 }
 

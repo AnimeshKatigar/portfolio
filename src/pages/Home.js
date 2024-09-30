@@ -6,7 +6,7 @@ import moonImg from "../assets/moon.png";
 import starsImg from "../assets/stars.png";
 import mountains_behindImg from "../assets/mountains_behind.png";
 import mountains_frontImg from "../assets/mountains_front.png";
-import animeshImg from "../assets/sscrop.png";
+import animeshImg from "../assets/Avatar.png";
 import { details } from "../assets/data/Data";
 import { TypeAnimation } from "react-type-animation";
 import "../styles/home.css";
