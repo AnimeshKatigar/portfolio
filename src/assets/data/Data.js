@@ -29,9 +29,23 @@ import {
 
 export const Work = [
   {
+    title: "360 ONE Wealth & Asset Management, Mumbai",
+    desc: "Software Development Engineer",
+    date: "May 2025 - Present",
+    content: [
+      "Working in the wealth-tech engineering team, owning the design and delivery of enterprise platforms for AIF distributors, from requirement gathering and architecture to production launch.",
+      "Led the end-to-end engineering of India's first AIF Channel Partner Portal, an internet-facing platform for distributors across the country, contributing to a 40% reduction in distributor-related support tickets.",
+      "Built broker self-registration, onboarding, document management and real-time notifications, and sped up access to client statements and reports, reducing manual dependency on support teams.",
+      "Independently developed an automated data-ingestion workflow for RTA reports (CAMS, KFintech) such as drawdowns and brokerage reports. The servicing team uploads source files, triggers report-specific business rules, and the processed data is published to the respective distributors, cutting manual processing and servicing effort by 95%.",
+      "Led the modernisation of a legacy enterprise application, consolidating 5 microservices into 3, and owned the core billing module. The architectural changes saved approximately ₹2 lakh per month (₹24 lakh annually) in infrastructure costs.",
+      "Designed and built a public-facing Reports Hub on the corporate website for secure distribution of confidential financial reports, using verification-bound access controls and request-integrity validation to protect broker and folio-specific data without a conventional login.",
+      "Tech stack: React.js, Next.js, TypeScript, Node.js, NestJS, PostgreSQL, Snowflake, Redis, RabbitMQ, AWS (Cognito, S3, SES, RDS, Lambda) and Docker.",
+    ],
+  },
+  {
     title: "Jio Platforms Limited, Mumbai",
     desc: "Software Engineer",
-    date: "July 2022 - Present",
+    date: "July 2022 - April 2025",
     content: [
       "Working as a Software Engineer in the Jio Platforms, where I am responsible for developing and maintaining the web applications.",
       "Led the development of JioStream Studio with Next.js, migrating old admin and creator portals to a unified, modern platform, while building the SuperAdmin portal from ground up to manage tenants, features, and plans for the Studio.",
